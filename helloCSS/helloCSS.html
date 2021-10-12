@@ -4,10 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HelloCSS</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <title>HelloCSS Inline-Internal</title>
+
+    <!-- Internal, quando é utilizado o css dentro da tag HEAD -->
+    <style type="text/css">
+        h2 {
+            color: red;
+        }
+
+        .p_azul {
+            color: blue;
+        }
+
+        .p_red {
+            color: red;
+        }
+
+        #principal {
+            background: gainsboro;
+        }
+
+    </style>
 </head>
-<body>
-    
+<body id="principal">
+    <h1>Estilo CSS Inline</h1> <!-- Inline, quando é utilizado o css dentro da tag, segue exemplo do "color" -->
+    <p style=" color: red; ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis amet libero fuga ipsam tenetur omnis asperiores alias. Facilis mollitia corporis delectus beatae, eius similique dolore perferendis consequuntur porro, distinctio commodi.</p>
+    <br>
+    <p style=" color: blue; ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quod accusantium illum earum facilis quos obcaecati minima? Dignissimos doloremque optio, consequuntur voluptates voluptas fugiat earum! Quibusdam odit dolores ea exercitationem.</p>
+
+    <br>
+    <h2>Estilo CSS Internal</h2> <!-- Internal, quando é utilizado o css dentro da tag HEAD -->
+
+    <br>
+    <h1>Classes e IDs</h1>
+    <p class="p_azul">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ratione aspernatur voluptas laboriosam blanditiis quae saepe, dolor fuga ut qui sint earum deserunt quos aut magnam fugiat quidem mollitia consequatur.</p>
+    <br>
+    <p class="p_red">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur eligendi corporis accusantium nemo ab a quae reprehenderit at animi ullam in ut dignissimos dolores quia aut autem, voluptas quod dolore?</p>
 </body>
 </html>
