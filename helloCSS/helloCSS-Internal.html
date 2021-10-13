@@ -9,7 +9,7 @@
     <!-- Internal, quando é utilizado o css dentro da tag HEAD -->
     <style type="text/css">
         #tipos-css{
-            background: gainsboro;
+            /*background: gainsboro;*/
         }
 
         h2 {
@@ -77,6 +77,18 @@
             /*text-decoration: underline;*/
             /*text-decoration: overline;*/
             text-decoration: line-through;
+        }
+
+        .cor-fundo{
+            background-color: gainsboro;
+        }
+
+        .imagem-fundo{
+            background-color: gold;
+            background-image: url('./imagens/amazon.png');
+            /* background-repeat: no-repeat; /* essa opção não deixa a imagem recarregar */
+            /* background-attachment: fixed; /* essa opção deixa a imagem fixa no fundo, ao rolar a página para baixo, apenas o texto é deslocado */
+            /*background-position: center center; */
         }
 
     </style>
@@ -151,5 +163,12 @@
     </div>
     <hr> <!-- ///////////////////////////////////////////////////////// -->
 
+    <h1>Cor e imagem de fundo</h1>
+    <div class="cor-fundo">
+       <p>Cor de Fundo</p> 
+    </div>
+    <div class="imagem-fundo">
+        imagem fundo
+    </div>
 </body>
 </html>
