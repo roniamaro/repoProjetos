@@ -8,7 +8,7 @@
 
     <!-- Internal, quando é utilizado o css dentro da tag HEAD -->
     <style type="text/css">
-        #tipos-css {
+        #tipos-css{
             background: gainsboro;
         }
 
@@ -24,15 +24,15 @@
             color: red;
         }
 
-        #cabecalho-div-span {
+        #cabecalho-div-span{
             background: gainsboro;
         }
 
-        #conteudo-div-span {
+        #conteudo-div-span{
             background: gainsboro;
         }
 
-        #rodape-div-span {
+        #rodape-div-span{
             background: gainsboro;
         }
 
@@ -57,6 +57,28 @@
             border-style: solid dotted dashed outset;
         }
 
+        .fonts{
+            color: blue;
+            font-size: 15px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', Arial, sans-serif;
+            /*
+            fonts com 2 nomes deve-se utilizar as áspas, veja a diferença com o arial que não precisa.
+            conforme o exemplo acima, é interessante pré-setar 3 fonts antes de colocar uma generica "sans-serif", dessa forma o browser tentará utilizar as 3 antes de usar a generica.
+            */
+        }
+
+        .negrito{
+            font-weight: 900; /* de 100 até 900 */
+        }
+        .italico{
+            font-style: italic;
+        }
+        .linha{
+            /*text-decoration: underline;*/
+            /*text-decoration: overline;*/
+            text-decoration: line-through;
+        }
+
     </style>
 </head>
 <body id="tipos-css">
@@ -73,6 +95,7 @@
     <p class="p_azul">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ratione aspernatur voluptas laboriosam blanditiis quae saepe, dolor fuga ut qui sint earum deserunt quos aut magnam fugiat quidem mollitia consequatur.</p>
     <br>
     <p class="p_red">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur eligendi corporis accusantium nemo ab a quae reprehenderit at animi ullam in ut dignissimos dolores quia aut autem, voluptas quod dolore?</p>
+    <hr> <!-- ///////////////////////////////////////////////////////// -->
 
     <h1>Div e Span</h1>
     <div id="cabecalho-div-span">
@@ -99,6 +122,7 @@
     <div id="rodape-div-span">
         <p>Todos os direitos reservados.</p>
     </div>
+    <hr> <!-- ///////////////////////////////////////////////////////// -->
 
     <h1>Bordas</h1>
     <div id="bordas">
@@ -109,5 +133,23 @@
         Bordas
         <br>
     </div>
+    <hr> <!-- ///////////////////////////////////////////////////////// -->
+
+    <h1>Fonts e Cores</h1>
+    <div class="fonts">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, cupiditate qui quam, aliquid temporibus similique dolorem exercitationem voluptatum omnis accusantium labore illum reiciendis et expedita! Exercitationem enim obcaecati dicta explicabo!</p>
+    </div>
+    <hr> <!-- ///////////////////////////////////////////////////////// -->
+
+    <h1>Estilos de textos</h1>
+    <div>
+        <p class="negrito">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum similique minus magnam odit neque qui reiciendis enim saepe consectetur nulla recusandae, eum natus quis sint reprehenderit distinctio, alias quidem pariatur.</p>
+
+        <p class="italico">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed eius fugiat vitae consequuntur fuga voluptatibus repellendus accusantium et tenetur sapiente atque quaerat laudantium, voluptate cum impedit voluptatum rerum voluptas doloremque!</p>
+
+        <p class="linha">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, distinctio delectus cumque vel aliquam non aliquid ea commodi adipisci dolore enim. Quasi sint accusantium modi aliquid! Error quibusdam dicta id.</p>
+    </div>
+    <hr> <!-- ///////////////////////////////////////////////////////// -->
+
 </body>
 </html>
