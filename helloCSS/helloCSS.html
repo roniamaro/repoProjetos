@@ -8,6 +8,10 @@
 
     <!-- Internal, quando é utilizado o css dentro da tag HEAD -->
     <style type="text/css">
+        #tipos-css {
+            background: gainsboro;
+        }
+
         h2 {
             color: red;
         }
@@ -20,13 +24,42 @@
             color: red;
         }
 
-        #principal {
+        #cabecalho-div-span {
             background: gainsboro;
+        }
+
+        #conteudo-div-span {
+            background: gainsboro;
+        }
+
+        #rodape-div-span {
+            background: gainsboro;
+        }
+
+        #bordas{
+            /* 
+            dotted - Defines a dotted border
+            dashed - Defines a dashed border
+            solid - Defines a solid border
+            double - Defines a double border
+            groove - Defines a 3D grooved border. The effect depends on the border-color value
+            ridge - Defines a 3D ridged border. The effect depends on the border-color value
+            inset - Defines a 3D inset border. The effect depends on the border-color value
+            outset - Defines a 3D outset border. The effect depends on the border-color value
+            none - Defines no border
+            hidden
+            */
+
+            /*border: 1px solid red;*/
+
+            border-color: red green yellow blue;
+            border-width: 15px 10px 5px 1px;
+            border-style: solid dotted dashed outset;
         }
 
     </style>
 </head>
-<body id="principal">
+<body id="tipos-css">
     <h1>Estilo CSS Inline</h1> <!-- Inline, quando é utilizado o css dentro da tag, segue exemplo do "color" -->
     <p style=" color: red; ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis amet libero fuga ipsam tenetur omnis asperiores alias. Facilis mollitia corporis delectus beatae, eius similique dolore perferendis consequuntur porro, distinctio commodi.</p>
     <br>
@@ -40,5 +73,41 @@
     <p class="p_azul">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ratione aspernatur voluptas laboriosam blanditiis quae saepe, dolor fuga ut qui sint earum deserunt quos aut magnam fugiat quidem mollitia consequatur.</p>
     <br>
     <p class="p_red">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur eligendi corporis accusantium nemo ab a quae reprehenderit at animi ullam in ut dignissimos dolores quia aut autem, voluptas quod dolore?</p>
+
+    <h1>Div e Span</h1>
+    <div id="cabecalho-div-span">
+        <img src="./imagens/amazon.png" width="200px">
+        <ul>
+            <li>Home</li>
+            <li>Produtos</li>
+            <li>Contato</li>
+        </ul>
+    </div>
+
+    <div id="conteudo-div-span">
+        <div class="produto">
+            Produto 1
+        </div>
+        <div class="produto">
+            Produto 2
+        </div>
+        <div class="produto">
+            Produto 3
+        </div>
+    </div>
+    
+    <div id="rodape-div-span">
+        <p>Todos os direitos reservados.</p>
+    </div>
+
+    <h1>Bordas</h1>
+    <div id="bordas">
+        Bordas
+        <br>
+        Bordas
+        <br>
+        Bordas
+        <br>
+    </div>
 </body>
 </html>
