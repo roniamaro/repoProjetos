@@ -1,9 +1,6 @@
 body{
     background: #d2d2c1 url('imagens/fundo.png'); /* a imagem de fundo não deu certo */
     font: 16px Arial, Helvetica, sans-serif;
-}
-
-#principal{
     width: 900px;
 }
 
@@ -20,6 +17,10 @@ body{
 #footer{
     font-weight: bold;
     text-align: center;
+}
+
+.img-campanha{
+    border: 10px solid #c3c3ae;
 }
 
 a{
