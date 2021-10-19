@@ -1,11 +1,65 @@
-.header{
-    color: blue;
+#padding{ /* margem interna */
+    border: 1px solid red;
+    padding: 20px;
+    background: gainsboro;
 }
 
-.conteudo{
-    color: red;
+#border{ /* borda externa */
+    border: 1px solid red;
+    background: gainsboro;
 }
 
-.footer{
-    color: chartreuse;
+#margin{ /* margem entre os elementos */
+    border: 1px solid red;
+    margin: 10px;
+    background: gainsboro;
+}
+
+#flut1{
+    background: gainsboro;
+    border: 1px solid red;
+    width: 100px;
+    height: 100px;
+}
+#flut2{
+    background: gainsboro;
+    border: 1px solid red;
+    width: 150px;
+    height: 150px;
+}
+#flut3{
+    background: gainsboro;
+    border: 1px solid red;
+    width: 200px;
+    height: 200px;
+}
+
+/* elementos flutuantes na pratica*/
+body{
+    background: white;
+}
+
+#principal{
+    width: 920px;
+    border: 1px solid red;
+}
+
+.noticia{
+    background: gainsboro;
+    padding: 5px;
+    width: 280px;
+    margin: 8px;
+    float: left;
+}
+
+.clear{
+    clear: both;
+}
+
+.imagem-galeria{
+    background: white;
+    width: 265px;
+    padding: 5px;
+    float: left;
+    margin: 15px;
 }

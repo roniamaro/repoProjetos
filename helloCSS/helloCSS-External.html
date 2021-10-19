@@ -7,42 +7,70 @@
     <title>Hello CSS External</title>
     <link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
-<body>
-    <header class="header">
-        <img src="./imagens/amazon.png" alt="">
-        <ul>
-            <li>Home</li>
-            <li>Contato</li>
-            <li>Quem Somos</li>
-        </ul>
-    </header>
-    
-    <div class="conteudo">
-        <h1>Conteúdo</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, tempora? Placeat alias distinctio iste maxime adipisci, commodi optio fuga veritatis voluptates est repellendus, doloremque nobis officia doloribus, at nulla et!</p>
-    </div>
+<body>    
 
-    <footer class="footer">
-        <h1>Footer</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat amet neque debitis voluptatum impedit id eaque fuga autem ipsum ducimus. Temporibus sed impedit ducimus facere ut consequuntur perferendis nihil itaque.</p>
+    <h1>Paddind - Border - Margin</h1>
+    <p id="padding"> <strong>Padding</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, tempora? Placeat alias distinctio iste maxime adipisci, commodi optio fuga veritatis voluptates est repellendus, doloremque nobis officia doloribus, at nulla et!</p>
 
-        <ul>
-            <li>Opção1</li>
-            <li>Opção1</li>
-            <li>Opção1</li>
-        </ul>
+    <p id="border"> <strong>Border</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident earum quisquam iusto magni natus perferendis fuga quo, aut fugiat id aperiam deserunt! Voluptas eos ad tempore iste sit corporis aspernatur.</p>
 
-        <ul>
-            <li>Opção1</li>
-            <li>Opção1</li>
-            <li>Opção1</li>
-        </ul>
+    <p id="margin"> <strong>Margin</strong> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus soluta animi praesentium, quos doloremque, facere officia optio totam id nisi fugit voluptate commodi dignissimos at vero architecto sit dolore perspiciatis?</p>
+    <hr>
 
-        <ul>
-            <li>Opção1</li>
-            <li>Opção1</li>
-            <li>Opção1</li>
-        </ul>
-    </footer>
+    <h1>Elemtos flutuantes</h1>
+    <p id="flut1">conteudo 1</p>
+    <p id="flut2">conteudo 2</p>
+    <p id="flut3">conteudo 3</p>
+    <hr>
+
+    <h1>Elementos flutuantes na prática</h1>
+    <div id="principal"> <!-- PRINCIPAL -->
+        <div> <!-- NOTICIA -->
+            <div class="noticia"> 
+                <h2><strong>Lorem ipsum dolor sit amet 1</strong></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ut perspiciatis doloremque, eius, tempora impedit iste sint eveniet, officiis praesentium tenetur rem minima possimus quam. Eius, commodi repellendus. In, laboriosam?</p>
+                <a href="">Veja mais...</a>
+            </div>
+
+            <div class="noticia">
+                <h2><strong>Lorem ipsum dolor sit amet 2</strong></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ut perspiciatis doloremque, eius, tempora impedit iste sint eveniet, officiis praesentium tenetur rem minima possimus quam. Eius, commodi repellendus. In, laboriosam?</p>
+                <a href="">Veja mais...</a>
+            </div>
+
+            <div class="noticia">
+                <h2><strong>Lorem ipsum dolor sit amet 3</strong></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ut perspiciatis doloremque, eius, tempora impedit iste sint eveniet, officiis praesentium tenetur rem minima possimus quam. Eius, commodi repellendus. In, laboriosam?</p>
+                <a href="">Veja mais...</a>
+            </div>
+        </div> <!-- FIM NOTICIA -->
+
+        <div> <!-- GALERIA FOTOS -->
+            <div class="imagem-galeria">
+                <img src="./imagens/imagensFlut/imagem1.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+
+            <div class="imagem-galeria">
+                <img src="./imagens/imagensFlut/imagem2.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+
+            <div class="imagem-galeria">
+                <img src="./imagens/imagensFlut/imagem3.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+
+            <div class="imagem-galeria">
+                <img src="./imagens/imagensFlut/imagem4.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            
+        </div> <!-- FIM GALERIA FOTOS -->
+
+        <div class="clear"></div>
+        
+    </div><!-- FIM PRINCIPAL -->
+
 </body>
 </html>
