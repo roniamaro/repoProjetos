@@ -35,10 +35,6 @@
 }
 
 /* elementos flutuantes na pratica*/
-body{
-    background: white;
-}
-
 #principal{
     width: 920px;
     border: 1px solid red;
@@ -63,3 +59,101 @@ body{
     float: left;
     margin: 15px;
 }
+
+/* blocos*/
+.borda{
+    border: 1px solid red;
+}
+
+/* Posicionamento estático e relativo */
+.posicionamento{
+    background: #007fc7;
+    width: 920px;
+    padding: 5px;
+}
+
+.container{
+    background: gainsboro;
+    width: 800px;
+    padding: 10px;
+    margin: 10px auto;
+    position: relative;
+}
+
+.h1PosicionamentoStaticRelative{
+
+}
+
+.pPosicionamentoStaticRelative{
+    width: 300px;
+    border: 1px solid red;
+    position: relative; 
+    /* abre a possibilidade de mover o objeto a partir de sua posição inicial dentro do "CONTAINER/DIV" */
+    /* os atributos são top, right, bottom, left logo abaixo do position: relative */
+    top: 40px;
+}
+
+/* Posicionamento absoluto e fixo */
+.pPosicionamentoAbsoluto{
+    width: 300px;
+    border: 1px solid red;
+    background: gold;
+    position: absolute; 
+    /* abre a possibilidade de mover o objeto a partir da posição inicial da página, no caso do body*/
+    /* os atributos são top, right, bottom, left logo abaixo do position: relative */
+    top: 40px;
+}
+
+.pPosicionamentoFixo{
+    width: 300px;
+    border: 1px solid red;
+    background: gold;
+    position: fixed; 
+    /* abre a possibilidade de mover o objeto a partir da posição inicial da página, no caso do body*/
+    /* os atributos são top, right, bottom, left logo abaixo do position: relative */
+    bottom: 0px;
+    right: 0px;
+    margin: 0px;
+}
+
+/* Sobrepondo elementos */
+.sobreConteudo1{
+    border: 1px solid red;
+    background: blue;
+    width: 200px;
+    height: 200px;
+    /*position: absolute;*/
+    z-index: 0; /* "contexto de empilhamento" essa config é responsável por ordenar qual elemento será exibido primeiro */
+}
+
+.sobreConteudo2{
+    border: 1px solid red;
+    background: orange;
+    width: 150px;
+    height: 150px;
+    /*position: absolute;*/
+    z-index: 1; /* "contexto de empilhamento" essa config é responsável por ordenar qual elemento será exibido primeiro */
+}
+
+/* Formatando Links */
+/*    a{
+        padding: 5px 10px;
+        text-decoration: none;
+    }
+
+    a:link{ /* links não visitados, esse é o status padrão do link */
+/*        color: red;
+    }
+
+    a:visited{ /* links visitados */
+/*        color: #c0c0c0;
+    }
+
+    a:hover{ /* links Hover, passar o cursor sobre o link */
+/*        color: #6d790f;
+    }
+
+    a:active{ /* links Ativos, quando clicado */
+/*        color: #e4f371;
+    }
+*/
